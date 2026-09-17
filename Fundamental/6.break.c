@@ -11,7 +11,8 @@ int main (void)
   {
       printf("Selamat anda benar di percobaan pertama!\n <⁠(⁠￣⁠︶⁠￣⁠)⁠>");
   }
-  
+
+  // Can use != instead, but in this case i want to learn || / or
   while (guess > answer || guess < answer)
     {
       printf("Jawaban anda kurang tepat\n");
