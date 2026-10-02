@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-//Here, we using if-else and switch statement, also ternary conditional
+/*Here, we using if-else and switch statement, also ternary conditional 
+format ternary = condition ? value_if_true : value_if_false*/
+
 int main() {
     int score;
     scanf("%d", &score);
