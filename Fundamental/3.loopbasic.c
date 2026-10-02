@@ -6,8 +6,8 @@ int main ()
 {
   while (pin != 1234)
     {
-      printf("Masukkan pin anda: \n");
+      printf("Enter your pin: \n");
       scanf("%d", &pin);
     }
-  printf("Pin anda benar!");
+  printf("Pin correct!");
 }
