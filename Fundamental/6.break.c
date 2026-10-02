@@ -5,22 +5,22 @@ int answer = 25;
 
 int main (void)
 {
-  printf("Masukkan tebakan anda 1-50\n");
+  printf("Enter your guess 1-50\n");
   scanf("%d", &guess);
   if (guess == answer)
   {
-      printf("Selamat anda benar di percobaan pertama!\n <⁠(⁠￣⁠︶⁠￣⁠)⁠>");
+      printf("Congrats, you got it on the first try!\n <⁠(⁠￣⁠︶⁠￣⁠)⁠>");
   }
 
   // Can use != instead, but in this case i want to learn || / or
   while (guess > answer || guess < answer)
     {
-      printf("Jawaban anda kurang tepat\n");
+      printf("Your answer isn't quite right\n");
       scanf("%d", &guess);
       
       if (guess == answer)
       {
-        printf("Anda benar!");
+        printf("You got it!");
         break;
       }
     }
