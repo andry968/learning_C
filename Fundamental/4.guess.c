@@ -5,19 +5,19 @@ int answer = 25;
 
 int main (void)
 {
-  printf("Tebak angka 1-50!\n Masukkan Angka: ");
+  printf("Guess a number 1-50!\n Enter a Number: ");
   
   scanf("%d", &guess);
 
   while (guess > answer)
     {
-      printf("%d Terlalu besar", guess);
+      printf("%d Too big", guess);
       scanf("%d", &guess);
     }
   while (guess < answer)
     {
-      printf("%d Terlalu kecil", guess);
+      printf("%d Too small", guess);
       scanf("%d", &guess);
     }
-  printf ("%d Selamat anda benar!", guess);
+  printf ("%d Congratulations, you got it right!", guess);
 }
