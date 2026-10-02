@@ -1,51 +1,51 @@
 #include <stdio.h>
 
 int main() {
-// Dewasa boleh masuk, anak kecil tidak
+// Adults may enter, small children may not
 
   char member;
   
-  int umur = 0;
-  printf("Masukkan Umur kamu: ");
+  int age = 0;
+  printf("Enter your age: ");
 
-  if (scanf("%d", &umur) !=1)
+  if (scanf("%d", &age) !=1)
   {
-    printf("Input gak valid");
+    printf("Invalid input");
   }
 
-  else if (umur >= 18 && umur <= 60)
+  else if (age >= 18 && age <= 60)
   {
-    printf("Anda berumur cukup, namun apakh anda bermember? (y/n): ");
+    printf("Your age is sufficient, but do you have a membership? (y/n): ");
     
     if (scanf(" %c", &member) != 1)
     {
-      printf("Input tidak valid");
+      printf("Invalid input");
     }
 
     else if (member == 'y')
     {
-      printf("Anda berumur %d, dan memiliki member. Silahkan masuk", umur);
+      printf("You are %d years old, and have a membership. Please enter", age);
     }
 
     else if (member == 'n')
     {
-      printf("Silahkan berlangganan member dahulu");
+      printf("Please subscribe to a membership first");
     }
 
     else
     {
-      printf("Input tidak valid");
+      printf("Invalid input");
     }
   }
 
-  else if (umur < 0)
+  else if (age < 0)
   {
-    printf("Angka tidak valid");
+    printf("Invalid number");
   }
 
   else
   {
-    printf("Anda berumur %d, Anda belum cukup umur", umur);
+    printf("You are %d years old, you are not old enough", age);
   }
 
   return 0;
